@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests"><!-- for parrelel running-->
+  <test  name="ChromeTest">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="kiteTestClass.VAlidateKiteUSerIDUsingProp"/>
+    </classes>
+  </test> <!-- Test -->
+   <test  name="FirefoxTest">
+    <parameter name="browserName" value="firefox"/>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
